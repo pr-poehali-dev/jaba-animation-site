@@ -34,18 +34,11 @@ const Index = () => {
       description: 'Основной канал с анимациями'
     },
     {
-      name: 'YouTube',
-      icon: 'Youtube',
+      name: 'Discord',
+      icon: 'MessageCircle',
       url: '#',
-      color: 'from-red-500 to-red-600',
-      description: 'Полные версии роликов'
-    },
-    {
-      name: 'Instagram',
-      icon: 'Instagram',
-      url: '#',
-      color: 'from-purple-500 via-pink-500 to-orange-400',
-      description: 'Фото и короткие клипы'
+      color: 'from-indigo-500 to-purple-600',
+      description: 'Общение с комьюнити'
     },
     {
       name: 'Telegram',
@@ -69,7 +62,7 @@ const Index = () => {
         <div className="relative z-10 max-w-6xl mx-auto text-center">
           <div className="mb-8 animate-float">
             <img 
-              src="https://cdn.poehali.dev/projects/e38ad30b-cac4-4e1f-b487-3f4ba1093929/files/c841d744-f4ba-4ee8-804d-b9993e325504.jpg" 
+              src="https://cdn.poehali.dev/projects/e38ad30b-cac4-4e1f-b487-3f4ba1093929/files/0e96a31c-0d41-4f9b-b404-add0dc327bc8.jpg" 
               alt="Жаба Dota 2" 
               className="w-64 h-64 mx-auto object-contain drop-shadow-[0_0_50px_rgba(34,197,94,0.5)]"
             />
