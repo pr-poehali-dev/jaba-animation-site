@@ -62,9 +62,9 @@ const Index = () => {
         <div className="relative z-10 max-w-6xl mx-auto text-center">
           <div className="mb-8 animate-float">
             <img 
-              src="https://cdn.poehali.dev/projects/e38ad30b-cac4-4e1f-b487-3f4ba1093929/files/0e96a31c-0d41-4f9b-b404-add0dc327bc8.jpg" 
+              src="https://cdn.poehali.dev/files/photo_2026-01-16_16-27-16.jpg" 
               alt="Жаба Dota 2" 
-              className="w-64 h-64 mx-auto object-contain drop-shadow-[0_0_50px_rgba(34,197,94,0.5)]"
+              className="w-80 h-80 mx-auto object-cover rounded-3xl drop-shadow-[0_0_50px_rgba(34,197,94,0.5)]"
             />
           </div>
 
