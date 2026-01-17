@@ -29,21 +29,21 @@ const Index = () => {
     {
       name: 'TikTok',
       icon: 'Music',
-      url: '#',
+      url: 'https://www.tiktok.com/@jabec_jabi?_r=1&_t=ZT-939TJFgyk50',
       color: 'from-cyan-400 to-pink-500',
       description: 'Основной канал с анимациями'
     },
     {
       name: 'Discord',
       icon: 'MessageCircle',
-      url: '#',
+      url: 'https://discord.gg/EEnxjsDc',
       color: 'from-indigo-500 to-purple-600',
       description: 'Общение с комьюнити'
     },
     {
       name: 'Telegram',
       icon: 'Send',
-      url: '#',
+      url: 'https://t.me/Jabi_Jabii',
       color: 'from-blue-400 to-blue-600',
       description: 'Закулисье и новости'
     }
@@ -113,29 +113,35 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {socialLinks.map((social, index) => (
-              <Card 
+              <a
                 key={social.name}
-                id={`social-${index}`}
-                className="animate-on-scroll p-8 bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-primary transition-all duration-300 hover-glow cursor-pointer group"
-                style={{ 
-                  opacity: isVisible[`social-${index}`] ? 1 : 0, 
-                  transform: isVisible[`social-${index}`] ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)', 
-                  transition: `all 0.6s ease-out ${index * 0.1}s` 
-                }}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <div className="flex items-center gap-6">
-                  <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${social.color} flex items-center justify-center neon-border group-hover:scale-110 transition-transform`}>
-                    <Icon name={social.icon} size={40} className="text-white" />
-                  </div>
-                  
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-heading font-bold mb-2 text-foreground">{social.name}</h3>
-                    <p className="text-muted-foreground">{social.description}</p>
-                  </div>
+                <Card 
+                  id={`social-${index}`}
+                  className="animate-on-scroll p-8 bg-card/50 backdrop-blur-sm border-2 border-transparent hover:border-primary transition-all duration-300 hover-glow cursor-pointer group"
+                  style={{ 
+                    opacity: isVisible[`social-${index}`] ? 1 : 0, 
+                    transform: isVisible[`social-${index}`] ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)', 
+                    transition: `all 0.6s ease-out ${index * 0.1}s` 
+                  }}
+                >
+                  <div className="flex items-center gap-6">
+                    <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${social.color} flex items-center justify-center neon-border group-hover:scale-110 transition-transform`}>
+                      <Icon name={social.icon} size={40} className="text-white" />
+                    </div>
+                    
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-heading font-bold mb-2 text-foreground">{social.name}</h3>
+                      <p className="text-muted-foreground">{social.description}</p>
+                    </div>
 
-                  <Icon name="ArrowRight" size={32} className="text-primary group-hover:translate-x-2 transition-transform" />
-                </div>
-              </Card>
+                    <Icon name="ArrowRight" size={32} className="text-primary group-hover:translate-x-2 transition-transform" />
+                  </div>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
