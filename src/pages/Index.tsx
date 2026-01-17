@@ -185,18 +185,7 @@ const Index = () => {
 
       <footer className="relative py-12 px-4 border-t border-primary/20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground text-lg mb-4">© 2026 ЖАБИИИ — Все анимации созданы с любовью к Dota 2</p>
-          <div className="flex justify-center gap-6">
-            {socialLinks.map((social) => (
-              <a 
-                key={social.name}
-                href={social.url}
-                className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center hover-glow border border-primary/30"
-              >
-                <Icon name={social.icon} size={20} className="text-primary" />
-              </a>
-            ))}
-          </div>
+          <p className="text-muted-foreground text-lg">© 2026 ЖАБИИИ — Все анимации созданы с любовью к Dota 2</p>
         </div>
       </footer>
     </div>
