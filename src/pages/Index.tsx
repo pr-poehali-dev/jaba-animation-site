@@ -81,13 +81,26 @@ const Index = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover-glow text-lg px-8 py-6 font-heading">
-              <Icon name="Play" className="mr-2" size={24} />
-              Смотреть контент
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-primary to-secondary hover-glow text-lg px-8 py-6 font-heading"
+              asChild
+            >
+              <a href="https://www.tiktok.com/@jabec_jabi?_r=1&_t=ZT-939TJFgyk50" target="_blank" rel="noopener noreferrer">
+                <Icon name="Play" className="mr-2" size={24} />
+                Смотреть контент
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover-glow text-lg px-8 py-6 font-heading">
-              <Icon name="Info" className="mr-2" size={24} />
-              О канале
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-primary text-primary hover-glow text-lg px-8 py-6 font-heading"
+              asChild
+            >
+              <a href="#about-section">
+                <Icon name="Info" className="mr-2" size={24} />
+                О канале
+              </a>
             </Button>
           </div>
         </div>
@@ -147,7 +160,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="relative py-20 px-4">
+      <section id="about-section" className="relative py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <Card 
             id="about-card"
