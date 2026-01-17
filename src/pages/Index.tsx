@@ -179,7 +179,7 @@ const Index = () => {
 
       <footer className="relative py-12 px-4 border-t border-primary/20">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground text-lg mb-4">© 2024 ЖАБИИИ — Все анимации созданы с любовью к Dota 2</p>
+          <p className="text-muted-foreground text-lg mb-4">© 2026 ЖАБИИИ — Все анимации созданы с любовью к Dota 2</p>
           <div className="flex justify-center gap-6">
             {socialLinks.map((social) => (
               <a 
